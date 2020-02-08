@@ -31,8 +31,6 @@ RUN wget --quiet https://repo.anaconda.com/archive/Anaconda3-2019.10-Linux-x86_6
     find /opt/conda/ -follow -type f -name '*.js.map' -delete && \
     /opt/conda/bin/conda clean -afy
 
-CMD [ "/bin/bash" ]
-
 RUN conda install scikit-learn -y
 
 RUN conda install matplotlib
@@ -44,5 +42,7 @@ RUN conda install pandas
 RUN conda install altair -y
 
 RUN conda install seaborn
+
+CMD [ "/bin/bash" ]
 
 
