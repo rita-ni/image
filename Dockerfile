@@ -43,6 +43,5 @@ RUN conda install altair -y
 
 RUN conda install seaborn
 
-CMD [ "/bin/bash" ]
 
 
