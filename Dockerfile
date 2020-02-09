@@ -43,5 +43,6 @@ RUN conda install altair -y
 
 RUN conda install seaborn
 
+RUN conda install -c anaconda make -y
 
 
